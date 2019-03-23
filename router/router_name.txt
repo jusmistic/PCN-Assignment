@@ -1,0 +1,24 @@
+[-] Router name is R1
+[+] Changing Router name From R1 to R1s
+[+] Changing Router name complete
+[+] Now Router name is R1s
+[-] Router name is R2
+[+] Changing Router name From R2 to R2s
+[+] Changing Router name complete
+[+] Now Router name is R2s
+[-] Router name is R3
+[+] Changing Router name From R3 to R3s
+[+] Changing Router name complete
+[+] Now Router name is R3s
+[-] Router name is R4
+[+] Changing Router name From R4 to R4s
+[+] Changing Router name complete
+[+] Now Router name is R4s
+[-] Router name is R5
+[+] Changing Router name From R5 to R5s
+[+] Changing Router name complete
+[+] Now Router name is R5s
+[-] Router name is R6
+[+] Changing Router name From R6 to R6s
+[+] Changing Router name complete
+[+] Now Router name is R6s

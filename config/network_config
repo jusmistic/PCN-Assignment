@@ -1,0 +1,48 @@
+#100.2.101.2
+
+auto eth0
+iface eth0 inet static
+       address 100.2.101.3
+       netmask 255.255.255.0
+       gateway 100.2.101.1
+
+#100.2.102.2
+
+auto eth0
+iface eth0 inet static
+       address 100.2.102.2
+       netmask 255.255.255.0
+       gateway 100.2.102.1
+
+#100.2.103.2
+
+auto eth0
+iface eth0 inet static
+       address 100.2.103.2
+       netmask 255.255.255.0
+       gateway 100.2.103.1
+
+#100.2.104.2
+
+auto eth0
+iface eth0 inet static
+       address 100.2.104.2
+       netmask 255.255.255.0
+       gateway 100.2.104.1
+
+
+#100.2.105.2
+
+auto eth0
+iface eth0 inet static
+       address 100.2.105.2
+       netmask 255.255.255.0
+       gateway 100.2.105.1
+
+#100.2.106.2
+
+auto eth0
+iface eth0 inet static
+       address 100.2.106.2
+       netmask 255.255.255.0
+       gateway 100.2.106.1

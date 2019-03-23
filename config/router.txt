@@ -1,0 +1,159 @@
+
+R1 /
+R2
+
+
+conf t
+hostname R1
+username cisco password cisco
+no ip domain-lookup
+
+line vty 0 15
+login local
+loggin s
+transport in all
+exit
+
+int s0/0
+ip add 100.2.3.18 255.255.255.252
+no shut
+exit
+
+int s0/1
+ip add 100.2.3.21 255.255.255.252
+no shut
+exit
+
+router ospf 1
+network 100.2.3.16 0.0.0.3 area 1
+network 100.2.3.20 0.0.0.3 area 1
+
+
+!--------------------------------------------
+
+R3
+!--------------------------------------------
+
+
+conf t
+hostname R3
+username cisco password cisco
+no ip domain-lookup
+
+line vty 0 15
+login local
+loggin s
+transport in all
+exit
+
+int s0/0
+ip add 100.2.3.10 255.255.255.252
+no shut
+exit
+
+int s0/1
+ip add 100.2.3.13 255.255.255.252
+no shut
+exit
+
+router ospf 1
+network 100.2.3.12 0.0.0.3 area 1
+network 100.2.3.8 0.0.0.3 area 1
+exit
+wr
+
+
+!------------------------------------------
+R4
+!------------------------------------------
+
+conf t
+hostname R4
+username cisco password cisco
+no ip domain-lookup
+
+line vty 0 15
+login local
+loggin s
+transport in all
+exit
+
+int s0/0
+ip add 100.2.3.9 255.255.255.252
+no shut
+exit
+
+int s0/1
+ip add 100.2.3.6 255.255.255.252
+no shut
+exit
+
+router ospf 1
+network 100.2.3.8 0.0.0.3 area 1
+network 100.2.3.4 0.0.0.3 area 1
+end
+wr
+
+!------------------------------------------
+R5
+!------------------------------------------
+
+conf t
+hostname R5
+username cisco password cisco
+no ip domain-lookup
+
+line vty 0 15
+login local
+loggin s
+transport in all
+exit
+
+int s0/0
+ip add 100.2.3.2 255.255.255.252
+no shut
+exit
+
+int s0/1
+ip add 100.2.3.5 255.255.255.252
+no shut
+exit
+
+router ospf 1
+network 100.2.3.2 0.0.0.3 area 1
+network 100.2.3.4 0.0.0.3 area 1
+end
+wr
+
+!--------------------------------------
+!_-------------------------------------
+int conf t
+hostname R6
+username cisco password cisco
+no ip domain-lookup
+
+line vty 0 15
+login local
+loggin s
+transport in all
+exit
+
+int s0/0
+ip add 100.2.3.1 255.255.255.252
+no shut
+exit
+
+int s0/1
+ip add 100.2.3.22 255.255.255.252
+no shut
+exit
+
+router ospf 1
+network 100.2.3.2 0.0.0.3 area 1
+network 100.2.3.20 0.0.0.3 area 1
+end
+
+
+
+
+
