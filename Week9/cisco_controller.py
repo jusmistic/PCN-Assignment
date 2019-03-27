@@ -21,7 +21,8 @@ class Cisco_router:
         self.telnet.read_until(b"Password:")
         self.telnet.write(self.en_password.encode('ascii') + b"\n")
         self.telnet.read_until(b"#")
-        self.telnet.write("terminal length 0")
+        self.telnet.write(b"terminal length 0\n")
+        self.telnet.read_until(b"#")
         return True
 
     def set_routername(self,rt_name):
